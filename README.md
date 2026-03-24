@@ -1,6 +1,6 @@
 # 🌌 3D Particle Galaxy (WebGL)
 
-A stunning, interactive 3D particle galaxy created using WebGL and JavaScript. 
+A stunning, interactive 3D particle galaxy created with WebGL and JavaScript. 
 
 This project simulates a rotating galaxy consisting of 100,000 glowing particles, featuring complex orbital mechanics, depth-based sizing, additive light blending, and interactive camera rotation & zooming using only mathematics and basic GLSL shaders. No external graphics libraries like Three.js are used!
 
