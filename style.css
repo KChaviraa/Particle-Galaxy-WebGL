@@ -1,0 +1,69 @@
+:root {
+    --bg-color: #050505;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    font-family: 'Outfit', sans-serif;
+}
+
+#glcanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.ui-container {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 10;
+    pointer-events: none;
+    user-select: none;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    color: var(--text-primary);
+    letter-spacing: 2px;
+}
+
+h1 span {
+    font-weight: 600;
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 20px rgba(161, 140, 209, 0.4);
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin: 0 0 5px 0;
+}
+
+p.subtitle {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
